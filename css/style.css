@@ -1,0 +1,164 @@
+/* Jarak navbar dari konten agar konten tidak tertutup navbar */
+body {
+    padding-top: 70px; /* Memberikan jarak dari navbar ke konten */
+}
+
+/* Navbar specific styles */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk memberikan efek elevasi */
+}
+
+/* Warna link yang aktif pada navbar */
+.nav-link.active {
+    color: #0d6efd; /* Warna biru terang saat link aktif */
+}
+
+/* Hover effect untuk link navbar */
+.nav-link:hover {
+    color: #0dcaf0; /* Warna biru muda saat link di-hover */
+}
+
+/* Container untuk genre, dengan scroll horizontal */
+.scroll-container {
+    display: flex;
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    padding: 1rem; /* Jarak antar elemen */
+}
+
+/* Style untuk genre cards */
+.genre-card {
+    flex: 0 0 auto; /* Kartu tidak meluas, tetap sesuai ukuran */
+    width: 200px; /* Lebar kartu */
+    margin: 10px; /* Jarak antar kartu */
+    padding: 1rem;
+    background-color: #f0f0f0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px; /* Sudut kartu melengkung */
+    transition: transform 0.2s; /* Efek transisi pada hover */
+}
+
+/* Efek hover untuk genre card */
+.genre-card:hover {
+    transform: scale(1.05); /* Pembesaran saat di-hover */
+    background-color: #e9ecef; /* Warna latar belakang berubah saat hover */
+}
+
+/* Style umum untuk setiap section */
+section {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi efek transform dan bayangan */
+}
+
+/* Khusus untuk section beranda, menghilangkan border dan background */
+#beranda {
+    padding: 1rem;
+    background-color: transparent; /* Background menjadi transparan */
+    margin: 0;
+    border: none; /* Menghapus border */
+}
+
+/* Menghilangkan hover effect pada section beranda */
+#beranda:hover {
+    transform: none; /* Tidak ada efek pembesaran */
+    box-shadow: none; /* Tidak ada bayangan */
+}
+
+/* Style judul pada section beranda */
+#beranda h2 {
+    border: none; /* Hapus garis bawah pada judul */
+    text-decoration: none; /* Hilangkan underline pada teks */
+    margin: 0; /* Hapus margin */
+}
+
+/* Style untuk footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 100px; /* Ukuran padding besar */
+    margin-top: 50px;
+}
+
+/* Style tambahan untuk header section */
+section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem; /* Jarak bawah pada judul */
+}
+
+/* Style untuk login container */
+.login-container {
+    max-width: 400px; /* Lebar maksimum container login */
+    margin: 100px auto; /* Margin otomatis agar berada di tengah */
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek elevasi */
+}
+
+/* Style untuk tabel */
+.table {
+    margin: 1rem 0; /* Jarak vertikal tabel dengan elemen lainnya */
+    background-color: white; /* Warna latar belakang tabel */
+    border-radius: 10px; /* Sudut tabel melengkung */
+}
+
+/* Border untuk tabel */
+.table-bordered {
+    border: 1px solid #ddd; /* Border tabel */
+}
+
+.table th, .table td {
+    vertical-align: middle; /* Rata tengah secara vertikal */
+    padding: 1rem; /* Jarak dalam sel tabel */
+}
+
+/* Warna header pada tabel */
+.table thead th {
+    background-color: #343a40; /* Warna background header tabel */
+    color: white; /* Warna teks header tabel */
+}
+
+/* Warna latar belakang sel saat di-hover */
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Warna sel saat di-hover */
+}
+
+/* Media query untuk layar dengan lebar maksimal 600px */
+@media only screen and (max-width: 600px) {
+    .genre-card {
+        width: 150px; /* Lebar kartu genre diperkecil di layar kecil */
+    }
+}
+
+/* Spasi antar genre */
+.genre {
+    margin-bottom: 2rem;
+}
+
+/* Style untuk book cards */
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease; /* Efek transisi bayangan */
+}
+
+/* Hover effect untuk book card */
+.book-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan saat di-hover */
+}
+
+/* Style untuk gambar sampul buku */
+.book-cover {
+    width: 100%; /* Gambar mengisi seluruh lebar card */
+    height: auto;
+    border-radius: 10px; /* Sudut gambar melengkung */
+    margin-bottom: 1rem; /* Spasi di bawah gambar */
+}
